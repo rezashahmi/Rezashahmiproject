@@ -1,0 +1,15 @@
+const int lightSwitchPin = 2; // Assuming the light switch is connected to digital pin 2
+bool lightSwitchState = false;
+
+void setup() {
+  pinMode(lightSwitchPin, OUTPUT);
+}
+
+void loop() {
+  // Check for input to toggle the light switch
+  if (/* condition */) {
+    lightSwitchState = !lightSwitchState; // Toggle the state
+    digitalWrite(lightSwitchPin, lightSwitchState ? HIGH : LOW); // Turn on/off the light
+    delay(1000); // Wait for 1 second
+  }
+}
