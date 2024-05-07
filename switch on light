@@ -10,6 +10,6 @@ void loop() {
   if (/* condition */) {
     lightSwitchState = !lightSwitchState; // Toggle the state
     digitalWrite(lightSwitchPin, lightSwitchState ? HIGH : LOW); // Turn on/off the light
-    delay(1000); // Wait for 3 second
+    delay(1000); // Wait for 1 second
   }
 }
